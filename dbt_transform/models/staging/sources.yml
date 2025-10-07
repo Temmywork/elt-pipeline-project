@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw data loaded by Python ETL script
+    database: elt_database
+    schema: public
+    tables:
+      - name: raw_sales
+        description: Raw sales data from CSV
+        columns:
+          - name: product
+            description: Product name
+          - name: quantity
+            description: Quantity sold
+          - name: price
+            description: Unit price
+          - name: date
+            description: Sale date
